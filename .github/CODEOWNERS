@@ -1,0 +1,9 @@
+# Default owner for everything, unless a more specific rule below matches.
+# Replace with your GitHub username/handle.
+*                           @harshalvk
+
+# Contract-specific owners — useful once you have collaborators; for now
+# this just documents intent and can stay pointed at yourself.
+/contracts/native/          @harshalvk
+/contracts/anchor/          @harshalvk
+/.github/                   @harshalvk

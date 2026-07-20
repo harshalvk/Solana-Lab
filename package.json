@@ -1,0 +1,31 @@
+{
+  "name": "solana-lab",
+  "private": true,
+  "workspaces": [
+    "contracts/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "new": "bash scripts/new-contract.sh",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.4",
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.1.0",
+    "turbo": "^2.10.5"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json}": [
+      "biome check --write --no-errors-on-unmatched"
+    ],
+    "*.rs": [
+      "rustfmt --edition 2021"
+    ]
+  }
+}

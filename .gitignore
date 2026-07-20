@@ -1,0 +1,21 @@
+target/
+**/target/
+.anchor/
+test-ledger/
+
+node_modules/
+bun.lockb
+bun.lock
+
+# Solana keypairs — matched by filename, not by extension, so config
+# JSON (package.json, tsconfig.json, biome.json, turbo.json, ...) is
+# tracked normally. Program keypairs under target/ are already covered
+# by the target/ rule above.
+id.json
+*-keypair.json
+keypair.json
+wallet*.json
+.config/solana/
+
+.DS_Store
+*.log
