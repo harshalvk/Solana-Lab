@@ -3,8 +3,8 @@ updates:
   - package-ecosystem: "cargo"
     directories:
       - "/"
-      - "/contracts/native/*"
-      - "/contracts/anchor/*"
+      - "/programs/native/*"
+      - "/programs/anchor/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 10
@@ -15,8 +15,9 @@ updates:
   - package-ecosystem: "npm"
     directories:
       - "/"
-      - "/contracts/native/*"
-      - "/contracts/anchor/*"
+      - "/packages/*"
+      - "/programs/native/*"
+      - "/programs/anchor/*"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 10
