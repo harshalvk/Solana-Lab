@@ -1,0 +1,9 @@
+{
+  "name": "@solana-lab/config",
+  "private": true,
+  "version": "0.0.0",
+  "files": [
+    "biome.json",
+    "tsconfig.base.json"
+  ]
+}
