@@ -44,11 +44,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        contract:
-          - contracts/native/hello-world
-          - contracts/anchor/counter
+        program:
+          - programs/native/01-hello-world
+          - programs/anchor/01-counter
     steps:
       - uses: actions/checkout@v4
       - uses: EmbarkStudios/cargo-deny-action@v2
         with:
-          manifest-path: ${{ matrix.contract }}/Cargo.toml
+          manifest-path: ${{ matrix.program }}/Cargo.toml
