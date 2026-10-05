@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@solana-lab/sdk": "workspace:*",
-    "@solana/kit": "^7.0.0"
+    "@solana/kit": "^8.4.0"
   },
   "devDependencies": {
     "litesvm": "^1.3.0",
